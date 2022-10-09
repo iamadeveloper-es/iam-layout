@@ -1,0 +1,49 @@
+@mixin widthSizes{
+    &--25{
+        width: 25%;
+    }
+    &--50{
+        width: 50%;
+    }
+    &--60{
+        width: 60%;
+    }
+    &--65{
+        width: 65%;
+    }
+    &--75{
+        width: 75%;
+    }
+    &--80{
+        width: 80%;
+    }
+    &--100{
+        width: 100%;
+    }
+}
+
+
+.w{
+    @include widthSizes();
+}
+
+@media screen and (min-width: $breakpoint_md){
+    .w-md{
+        @include widthSizes();
+    }
+}
+@media screen and (min-width: $breakpoint_lg){
+    .w-lg{
+        @include widthSizes();
+    }
+}
+@media screen and (min-width: $breakpoint_xl){
+    .w-xl{
+        @include widthSizes();
+    }
+}
+@media screen and (min-width: $breakpoint_xxl){
+    .w-xxl{
+        @include widthSizes();
+    }
+}
