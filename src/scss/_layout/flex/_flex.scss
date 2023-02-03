@@ -1,0 +1,53 @@
+@import './mixins/flex-cols-modifiers';
+@import './mixins/flex-cols-base';
+.flex{
+    display: flex;
+}
+
+.flexy-row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    border: 1px solid red;
+}
+
+$flexy-cols-base: (
+    'padding': 0 15px,
+    'border': 1px solid blue
+);
+
+.flexy-col{
+    flex-basis: 0;
+    flex-grow: 1;
+    min-width: 0;
+    max-width: 100%;
+    @each $key, $value in $flexy-cols-base {
+        #{$key} : $value
+    }
+    @include flexColModifiers();
+
+    @media screen and (min-width: $breakpoint_md){
+        &.flexy-col-md{
+            @include flexColModifiers();
+        }
+    }
+
+    @media screen and (min-width: $breakpoint_lg){
+        &.flexy-col-lg{
+            @include flexColModifiers();
+        }
+    }
+
+    @media screen and (min-width: $breakpoint_xl){
+        &.flexy-col-xl{
+            @include flexColModifiers();
+        }
+    }
+
+    @media screen and (min-width: $breakpoint_xxl){
+        &.flexy-col-xxl{
+            @include flexColModifiers();
+        }
+    }
+}

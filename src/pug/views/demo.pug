@@ -1,0 +1,60 @@
+extends ../layout/default.pug
+block content
+    .container 
+        .grid.grid--12.grid-md--gap-0.custom-row 
+            .grid-child.span-12.span-lg-6.row-lg-1-2
+                img.img-fluid(src="https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?cs=srgb&dl=pexels-pixabay-531880.jpg&fm=jpg", alt="")
+            .grid-child.span-12.col-lg-8-12.row-lg-1-2 
+                h2 Diseñado para vivir unos espacios de trabajo luminosos y sostenibles
+                p Con los más altos estándares de calidad, Foresta 8 está pensado para satisfacer todas las necesidades de un entorno de trabajo de alto nivel. 
+                p Un edificio de 7 plantas sobre rasante más 2 plantas de sótano. Moderno, luminoso y amplio con una fachada singular y una excepcional visibilidad desde la A-1.
+            .grid-child.grid-child--self-end.span-12.span-lg-3.row-lg-2-3.bg-white.px--4
+                p Servicios premium con posibilidad de albergar espacio de restauración y gimnasio.
+            .grid-child.span-12.span-lg-9.row-lg-2-3.bg-white
+                img.img-fluid.border-white(src="https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?cs=srgb&dl=pexels-pixabay-531880.jpg&fm=jpg", alt="")
+            .grid-child.span-12.bg-white.py--5.px--4
+                .grid.grid--gap-5
+                    - for(let i = 0; i < 8; i++)
+                        .grid-child.span-1
+                            img.img-fluid(src="https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?cs=srgb&dl=pexels-pixabay-531880.jpg&fm=jpg", alt="")
+                            p 11.766 m2 Superficie total alquilable
+    //- section.section 
+    //-     .container-fluid 
+    //-         .grid.grid--gap-0.custom-row-bottom  
+    //-             .grid-child.span-12.row-lg-1-3 
+    //-                 img.img-fluid(src="https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?cs=srgb&dl=pexels-pixabay-531880.jpg&fm=jpg", alt="")
+    //-             .grid-child.span-12.span-lg-4.row-lg-3-5.bg-white.px--4.py--4 
+    //-                 h2 En la zona de negocios y de regeneración más activa de Madrid
+    //-             //- .grid-child.span-12.span-lg-8.row-lg-4-5
+    //-             //-     img.img-fluid(src="https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?cs=srgb&dl=pexels-pixabay-531880.jpg&fm=jpg", alt="")
+    section.pt--5.section-location 
+        .container-fluid 
+            .grid.grid--12 
+                .grid-child.span-12.col-lg-2-5
+                    h2.bg-white.px--4.py--5.px--5 Versátil. Luminoso. Respetuoso con el medio ambiente
+                    p El edificio Foresta 8, actualmente está siendo certificado LEED en la modalidad Core&Shell, y cuenta y con la Precertificación LEED Gold. LEED Zero CARBON verifica y certifica que durante la operación, las emisiones de gases de efecto invernadero que afectan la tierra, la energía, el transporte, el agua, los desechos y los materiales sean cero en los edificios existentes. LEED Zero Carbon, se otorga a los proyectos que logran cero emisiones de carbono durante un periodo de tiempo de 12 meses de operación y donde es posible compensar las emisiones mediante la generación de energía renovable dentro o fuera del sitio.
+                .grid-child.span-12.col-lg-6-end
+                    img.img-fluid(src="https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?cs=srgb&dl=pexels-pixabay-531880.jpg&fm=jpg", alt="")
+    section.pt--5
+        .container 
+            .grid.grid--12 
+                .grid-child.span-12.col-lg-1-7.row-lg-1-2 
+                    img.img-fluid(src="https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?cs=srgb&dl=pexels-pixabay-531880.jpg&fm=jpg", alt="")
+                .grid-child.grid-child--self-center.span-12.col-lg-6-end.row-lg-1-2.grid.grid--12
+                    .grid-child.span-12.col-lg-2-10
+                        h2.bg-white.px--4.py--5.px--5 Un compromiso que va más allá de la identidad o las tendencias
+                    .grid-child.span-12.col-lg-3-10 
+                        p El edificio Foresta 8, actualmente está siendo certificado LEED en la modalidad Core&Shell, y cuenta y con la Precertificación LEED Gold. LEED Zero CARBON verifica y certifica que durante la operación, las emisiones de gases de efecto invernadero que afectan la tierra, la energía, el transporte, el agua, los desechos y los materiales sean cero en los edificios existentes. LEED Zero Carbon, se otorga a los proyectos que logran cero emisiones de carbono durante un periodo de tiempo de 12 meses de operación y donde es posible compensar las emisiones mediante la generación de energía renovable dentro o fuera del sitio.
+    section.pt--5.terrace 
+        .container-fluid 
+            .grid.grid--12.custom-row-terrace 
+                .grid-child.span-12.col-lg-1-end.row-lg-1-4
+                    img.img-fluid.img-cover(src="https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?cs=srgb&dl=pexels-pixabay-531880.jpg&fm=jpg", alt="")
+                .grid-child.span-12.col-lg-1-end.grid.grid--12.row-lg-3-5 
+                    .grid-child.grid-child--self-end.span-6.col-lg-2-4
+                        p.bg-white.px--5.py--5 Lorem ipsum dolor sit amet. 
+                    .grid-child.span-6.col-lg-4-7
+                        img.img-fluid.img-cover(src="https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?cs=srgb&dl=pexels-pixabay-531880.jpg&fm=jpg", alt="") 
+                    .grid-child.span-12.col-lg-8-11
+                        h2.bg-white.px--4.py--5.px--5 Un compromiso que va más allá de la identidad o las tendencias
+                        p El edificio Foresta 8, actualmente está siendo certificado LEED en la modalidad Core&Shell, y cuenta y con la Precertificación LEED Gold. LEED Zero CARBON verifica y certifica que durante la operación, las emisiones de gases de efecto invernadero que afectan la tierra, la energía, el transporte, el agua, los desechos y los materiales sean cero en los edificios existentes. LEED Zero Carbon, se otorga a los proyectos que logran cero emisiones de carbono durante un periodo de tiempo de 12 meses de operación y donde es posible compensar las emisiones mediante la generación de energía renovable dentro o fuera del sitio.

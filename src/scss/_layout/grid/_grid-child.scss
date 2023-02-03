@@ -1,0 +1,30 @@
+@import 'mixins/grid-child-modifiers';
+
+.grid-child{
+    @include grid-child-modifiers();
+}
+
+
+@media (min-width: $breakpoint_md){
+    .grid-child-md{
+        @include grid-child-modifiers();
+    }
+}
+
+@media (min-width: $breakpoint_lg){
+    .grid-child-lg{
+        @include grid-child-modifiers();
+    }
+}
+
+@media (min-width: $breakpoint_xl){
+    .grid-child-xl{
+        @include grid-child-modifiers();
+    }
+}
+
+@media (min-width: $breakpoint_xxl){
+    .grid-child-xxl{
+        @include grid-child-modifiers();
+    }
+}

@@ -1,0 +1,45 @@
+extends ../layout/default.pug
+block content
+    .container 
+        .grid
+            .grid-child.grid-child--self-center.span-12.span-md-6.span-lg-3.span-xl-4.span-xxl-6
+                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, provident error! Cum, maiores debitis! Architecto omnis nesciunt perspiciatis corporis doloremque, commodi adipisci pariatur tempore minus quae a odit voluptatum quo!
+            .grid-child.span-12.span-md-6.span-lg-3.span-xl-4.span-xxl-6
+                img.img-fluid(src="https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?cs=srgb&dl=pexels-pixabay-531880.jpg&fm=jpg", alt="")
+            .grid-child.span-12.span-md-6.span-lg-3.span-xl-4.span-xxl-6
+                img.img-fluid(src="https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?cs=srgb&dl=pexels-pixabay-531880.jpg&fm=jpg", alt="")
+            .grid-child.span-12.span-md-6.span-lg-3.span-xl-4.span-xxl-6
+                img.img-fluid(src="https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?cs=srgb&dl=pexels-pixabay-531880.jpg&fm=jpg", alt="")
+            .grid-child.span-12.span-md-6.span-lg-3.span-xl-4.span-xxl-6
+                img.img-fluid(src="https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?cs=srgb&dl=pexels-pixabay-531880.jpg&fm=jpg", alt="")
+            .grid-child.grid-child--self-center.span-6
+                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, provident error! Cum, maiores debitis! Architecto omnis nesciunt perspiciatis corporis doloremque, commodi adipisci pariatur tempore minus quae a odit voluptatum quo!
+            .grid-child
+                img.img-fluid(src="https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?cs=srgb&dl=pexels-pixabay-531880.jpg&fm=jpg", alt="")
+            .grid-child
+                img.img-fluid(src="https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?cs=srgb&dl=pexels-pixabay-531880.jpg&fm=jpg", alt="")
+    .container 
+        .grid
+            - for(let i = 0; i < 3; i++)
+                .grid-child
+                    img.img-fluid(src="https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?cs=srgb&dl=pexels-pixabay-531880.jpg&fm=jpg", alt="")
+        .grid.grid--12
+            .grid-child.span-12.span-lg-6 
+                p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur molestias accusantium odio saepe voluptate doloribus ratione porro laborum quia. Fugit quo iure, quos reprehenderit dignissimos obcaecati veritatis aliquam eos minus.
+            .grid-child.span-12.span-lg-6 
+                p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur molestias accusantium odio saepe voluptate doloribus ratione porro laborum quia. Fugit quo iure, quos reprehenderit dignissimos obcaecati veritatis aliquam eos minus.
+            .grid-child.span-12.span-lg-3
+                img.img-fluid(src="https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?cs=srgb&dl=pexels-pixabay-531880.jpg&fm=jpg", alt="")
+            .grid-child.grid-child--self-end.span-12.span-lg-5 
+                p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur molestias accusantium odio saepe voluptate doloribus ratione porro laborum quia. Fugit quo iure, quos reprehenderit dignissimos obcaecati veritatis aliquam eos minus.
+            .grid-child.grid-child--self-end.span-12.span-lg-4 
+                p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur molestias accusantium odio saepe voluptate doloribus ratione porro laborum quia. Fugit quo iure, quos reprehenderit dignissimos obcaecati veritatis aliquam eos minus.
+            .grid-child.span-12.span-lg-6 
+                img.img-fluid(src="https://wallpaperaccess.com/full/1559254.png", alt="")
+            .grid-child.grid-child--self-center.span-12.span-lg-6
+                h4 Lorem ipsum 
+                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo accusamus quibusdam numquam corrupti dolor magni! Dolore, omnis at enim aut eveniet rerum fugiat aliquam eius nobis temporibus neque a qui.
+                p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et obcaecati in assumenda dignissimos, sed qui, dolorum ipsum aspernatur, omnis ea sint excepturi dolor incidunt optio unde ipsam expedita repellendus hic!
+        .grid.grid--12
+            .grid-child.span-12.span-lg-6 
+                img.img-fluid(src="https://wallpaperaccess.com/full/1559254.png", alt="")

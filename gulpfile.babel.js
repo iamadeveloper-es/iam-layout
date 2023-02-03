@@ -29,7 +29,7 @@ gulp.task('es6', function () {
     return gulp.src('./src/scss/**/*.scss')
         .pipe(sass().on('error', sass.logError))
         .pipe(sourcemaps.init())
-        .pipe(sass({ outputStyle: 'compressed' }))
+        // .pipe(sass({ outputStyle: 'compressed' }))
         .pipe(sourcemaps.write({ includeContent: true }))
         .pipe(sourcemaps.init({ loadMaps: true }))
         .pipe(autoprefixer('last 10 version'))
@@ -48,7 +48,7 @@ gulp.task('watchSass', function () {
  gulp.task('process', function () {
     return gulp.src(['./src/js/*.js'])
         .pipe(babel({  presets: ['@babel/preset-env']}))
-        .pipe(uglify())
+        // .pipe(uglify())
         .pipe(gulp.dest('./public/js'))
         .pipe(notify("JS Compiled!"));
 

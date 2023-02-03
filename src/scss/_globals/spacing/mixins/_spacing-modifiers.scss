@@ -1,0 +1,65 @@
+@mixin spacing-modifier($properties){
+
+    @for $i from 1 through 5 {
+        &--#{$i}{
+            @each $item in $properties {
+                #{$item}: var(--spacing-#{$i})
+            }
+        }
+    }
+
+    @media (min-width: $breakpoint_sm){
+        
+        @for $i from 1 through 5{
+            &-sm--#{$i}{
+                @each $item in $properties {
+                    #{$item}: var(--spacing-#{$i})
+                }
+            }
+        }
+    }
+
+    @media (min-width: $breakpoint_md){
+        
+        @for $i from 1 through 5{
+            &-md--#{$i}{
+                @each $item in $properties {
+                    #{$item}: var(--spacing-#{$i})
+                }
+            }
+        }
+    }
+
+    @media (min-width: $breakpoint_lg){
+        
+        @for $i from 1 through 5{
+            &-lg--#{$i}{
+                @each $item in $properties {
+                    #{$item}: var(--spacing-#{$i})
+                }
+            }
+        }
+    }
+
+    @media (min-width: $breakpoint_xl){
+        
+        @for $i from 1 through 5{
+            &-xl--#{$i}{
+                @each $item in $properties {
+                    #{$item}: var(--spacing-#{$i})
+                }
+            }
+        }
+    }
+
+    @media (min-width: $breakpoint_xxl){
+        
+        @for $i from 1 through 5{
+            &-xxl--#{$i}{
+                @each $item in $properties {
+                    #{$item}: var(--spacing-#{$i})
+                }
+            }
+        }
+    }
+}

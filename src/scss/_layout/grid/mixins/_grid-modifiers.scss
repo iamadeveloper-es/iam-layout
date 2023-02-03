@@ -1,0 +1,40 @@
+@mixin grid-modifiers(){
+
+    &--12{
+        grid-template-columns: repeat(12, 1fr);
+    }
+
+    &--16{
+        grid-template-columns: repeat(16, 1fr);
+    }
+
+    &--gap-0{
+        grid-gap: 0;
+    }
+
+    &--gap-1{
+        grid-gap: .5em;
+    }
+
+    &--gap-2{
+        grid-gap: 1em;
+    }
+
+    &--gap-3{
+        grid-gap: 1.5em;
+    }
+
+    &--gap-4{
+        grid-gap: 2em;
+    }
+
+    &--gap-5{
+        grid-gap: 2.5em;
+    }
+
+    // @for $i from 1 through 3 {
+    //     ul:nth-child(3n + #{$i}) {
+    //         background-color: lighten($base-color, $i * 5%);
+    //     }
+    // }
+}

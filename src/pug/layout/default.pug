@@ -1,9 +1,13 @@
 doctype html
 html(lang="es")
-    include ../inc/head.pug
-    include ../inc/header.pug
+    head
+        include ../inc/meta.pug
 
-    main
-        block content
+    body
 
-    include ../inc/footer.pug
+        include ../inc/header.pug
+
+        main
+            block content
+
+        include ../inc/footer.pug

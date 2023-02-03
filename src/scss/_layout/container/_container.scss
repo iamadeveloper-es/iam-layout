@@ -1,0 +1,44 @@
+@import './mixins/container-base';
+.container{
+    @include containerBase;
+
+    &--fluid{
+        max-width: 100%;
+        @include containerBase;
+    }
+
+    @media screen and (min-width: $breakpoint_sm){
+        max-width: 516px;
+        &--md-fluid{
+            max-width: 100%;
+        }
+    }
+
+    @media screen and (min-width: $breakpoint_md){
+        max-width: 678px;
+        &--md-fluid{
+            max-width: 100%;
+        }
+    }
+
+    @media screen and (min-width: $breakpoint_lg){
+        max-width: 892px;
+        &--lg-fluid{
+            max-width: 100%;
+        }
+    }
+
+    @media screen and (min-width: $breakpoint_xl){
+        max-width: 1100px;
+        &--xl-fluid{
+            max-width: 100%;
+        }
+    }
+
+    @media screen and (min-width: $breakpoint_xxl){
+        max-width: var(--container-size);
+        &--xxl-fluid{
+            max-width: 100%;
+        }
+    }
+}

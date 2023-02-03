@@ -1,0 +1,19 @@
+@import 'mixins/grid-child-properties';
+
+@include grid-child-properties();
+
+@media (min-width: $breakpoint_md){
+    @include grid-child-properties('md');
+}
+
+@media (min-width: $breakpoint_lg){
+    @include grid-child-properties('lg');
+}
+
+@media (min-width: $breakpoint_xl){
+    @include grid-child-properties('xl');
+}
+
+@media (min-width: $breakpoint_xxl){
+    @include grid-child-properties('xxl');
+}

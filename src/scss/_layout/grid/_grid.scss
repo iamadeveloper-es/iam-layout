@@ -1,0 +1,33 @@
+@import 'mixins/grid-modifiers';
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(5rem, 100%), 1fr));
+    grid-gap: .5em;
+    
+    @include grid-modifiers();
+}
+
+@media (min-width: $breakpoint_md){
+    .grid-md{
+        @include grid-modifiers();
+    }
+}
+
+@media (min-width: $breakpoint_lg){
+    .grid-lg{
+        @include grid-modifiers();
+    }
+}
+
+@media (min-width: $breakpoint_xl){
+    .grid-xl{
+        @include grid-modifiers();
+    }
+}
+
+@media (min-width: $breakpoint_xxl){
+    .grid-xxl{
+        @include grid-modifiers();
+    }
+}

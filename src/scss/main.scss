@@ -1,6 +1,16 @@
 
 @import '_abstract/variables/breakpoints';
+@import '_abstract/variables/global';
 
 @import '_base/reset';
 @import '_globals/common';
 @import '_globals/sizes';
+@import '_globals/images';
+@import '_globals/spacing/spacing';
+
+@import '_layout/container/container';
+@import '_layout/flex/flex';
+
+@import '_layout/grid/grid';
+@import '_layout/grid/grid-child';
+@import '_layout/grid/grid-properties';

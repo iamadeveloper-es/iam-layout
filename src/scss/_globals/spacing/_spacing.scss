@@ -1,0 +1,91 @@
+@import 'mixins/spacing-modifiers';
+
+//Margins
+.mt{
+    @include spacing-modifier((margin-top));
+}
+
+.mb{
+    @include spacing-modifier((margin-bottom));
+}
+
+.my{
+    @include spacing-modifier((margin-top, margin-bottom));
+}
+
+.ml{
+    @include spacing-modifier((margin-left));
+}
+
+.mr{
+    @include spacing-modifier((margin-right));
+}
+.mx{
+    @include spacing-modifier((margin-left, margin-right));
+}
+.mx{
+
+    &--auto{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    @media (min-width: $breakpoint_sm){
+        &-sm--auto{
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    @media (min-width: $breakpoint_md){
+        &-md--auto{
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    @media (min-width: $breakpoint_lg){
+        &-lg--auto{
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    @media (min-width: $breakpoint_xl){
+        &-xl--auto{
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    @media (min-width: $breakpoint_xxl){
+        &-xxl--auto{
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
+
+//Paddings
+.pt{
+    @include spacing-modifier((padding-top));
+}
+
+.pb{
+    @include spacing-modifier((padding-bottom));
+}
+
+.py{
+    @include spacing-modifier((padding-top, padding-bottom));
+}
+
+.pl{
+    @include spacing-modifier((padding-left));
+}
+
+.pr{
+    @include spacing-modifier((padding-right));
+}
+.px{
+    @include spacing-modifier((padding-left, padding-right));
+}

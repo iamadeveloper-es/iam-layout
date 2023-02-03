@@ -1,0 +1,27 @@
+@import '_abstract/variables/breakpoints';
+@import '_abstract/variables/global';
+body{
+    background-color: #f7f3ee;
+}
+
+.bg-white{
+    background-color: white;
+}
+.border-white{
+    border: 12px solid white;
+}
+
+@media (min-width: $breakpoint-lg){
+    .custom-row{
+        grid-template-rows: minmax(10rem, 20vw) auto auto;
+    }
+
+    .custom-row-bottom {
+        grid-template-rows: 250px 250px 100px auto auto;
+    }
+
+    .custom-row-terrace {
+        grid-template-rows: 250px 250px 100px auto auto;
+    }
+    
+}

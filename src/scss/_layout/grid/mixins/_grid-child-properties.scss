@@ -1,0 +1,103 @@
+@mixin grid-child-properties($size: ''){
+
+    @if $size != '' {
+        //col-start
+        @for $i from 1 through 13 {
+            .col-#{$size}-start-#{$i}{
+                grid-column-start: $i;
+            }
+        }
+
+        //col-end
+        @for $i from 1 through 13 {
+            .col-#{$size}-end-#{$i}{
+                grid-column-end: $i;
+            }
+        }
+
+        .col-#{$size}-end{
+            grid-column-end: -1;
+        }
+
+        //grid-column: n/n
+        @for $col from 1 through 13 {
+            @for $i from 1 through 13 {
+                @if $i > $col{
+                    .col-#{$size}-#{$col}-#{$i}{
+                        grid-column: #{$col} / #{$i};
+                    }
+                    .col-#{$size}-#{$col}-end{
+                        grid-column: #{$col} / -1;
+                    }
+                }
+            }
+        }
+
+        //grid-column: span ...
+        @for $i from 1 through 12 {
+            .span-#{$size}-#{$i}{
+                grid-column: span $i;
+            }
+        }
+
+        //grid-row: n/n
+        @for $row from 1 through 12 {
+            @for $i from 1 through 12 {
+                @if $i > $row{
+                    .row-#{$size}-#{$row}-#{$i}{
+                        grid-row: #{$row} / #{$i};
+                    }
+                }
+            }
+        }
+    }
+    @else{
+        //col-start
+        @for $i from 1 through 12 {
+            .col-start-#{$i}{
+                grid-column-start: $i;
+            }
+        }
+
+        //col-end
+        @for $i from 1 through 12 {
+            .col-end-#{$i}{
+                grid-column-end: $i;
+            }
+        }
+
+        .col-end{
+            grid-column-end: -1;
+        }
+
+        //grid-column: n/n
+        @for $col from 1 through 12 {
+            @for $i from 1 through 12 {
+                @if $i > $col{
+                    .col-#{$col}-#{$i}{
+                        grid-column: #{$col} / #{$i};
+                    }
+                }
+            }
+        }
+
+        //grid-column: span ...
+        @for $i from 1 through 12 {
+            .span-#{$i}{
+                grid-column: span $i;
+            }
+        }
+
+        //grid-row: n/n
+        @for $row from 1 through 12 {
+            @for $i from 1 through 12 {
+                @if $i > $row{
+                    .row-#{$row}-#{$i}{
+                        grid-row: #{$row} / #{$i};
+                    }
+                }
+            }
+        }
+
+    }
+}
